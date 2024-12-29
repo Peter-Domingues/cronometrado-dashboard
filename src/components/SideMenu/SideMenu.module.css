@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sideMenu {
+  width: 0;
+  background-color: var(--yellow-1);
+  color: white;
+  height: 100%;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.sideMenu.open {
+  width: 250px;
+}
+
+.iconButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow-1);
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.iconButtonClose {
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Ensure button is above the menu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.iconButton:hover {
+  background-color: var(--yellow-2);
+}
+
+.sideMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sideMenu ul li {
+  margin: 20px;
+}
+
+.sideMenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  margin-left: 0;
+}
+
+.mainContent.shrink {
+  margin-left: 250px;
+}

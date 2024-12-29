@@ -1,0 +1,42 @@
+html {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+table {
+  border: 1px solid lightgray;
+}
+
+tbody {
+  border-bottom: 1px solid lightgray;
+}
+
+th {
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 2px 4px;
+}
+
+tfoot {
+  color: gray;
+}
+
+tfoot th {
+  font-weight: normal;
+}
+
+.container {
+  max-width: 100%;
+  overflow: scroll;
+  background-color: white;
+  color: black;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #cca644; /* Change this to your desired color */
+  border-color: #8f7132; /* Optional: change border color when checked */
+}
+
+.checkbox-container {
+  padding: 2px 4px;
+}

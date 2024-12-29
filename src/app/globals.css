@@ -7,6 +7,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --yellow-1: #cca644;
+    --yellow-2: #8f7132;
   }
 }
 
@@ -33,6 +35,56 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.page {
+  padding: 3%;
+}
+
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: transparent; /* Transparent track */
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: transparent; /* Transparent on hover */
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: transparent; /* Transparent when active */
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #cca644;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #8f7132;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #8f7132;
+}
+
+.table-checkbox:checked {
+  background-color: #cca644;
+  border-color: #8f7132;
+}
+
+.table-checkbox:checked::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  margin: auto;
+  border-radius: 50%;
 }
 
 @media (prefers-color-scheme: dark) {
